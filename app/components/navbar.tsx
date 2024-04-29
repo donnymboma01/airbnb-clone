@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import DesktopLogo from "../../public/airbnb-desktop.png";
 import MobileLogo from "../../public/image.png";
+import { UserNav } from "./user-nav";
 
 export function Navbar() {
   return (
@@ -20,6 +21,12 @@ export function Navbar() {
             className="block lg:hidden w-12 "
           />
         </Link>
+
+        <div className="rounded-full border px-5 py-2 ">
+          <h1>Hello from the search...</h1>
+        </div>
+
+        <UserNav />
       </div>
     </nav>
   );
