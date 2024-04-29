@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+
 import DesktopLogo from "../../public/airbnb-desktop.png";
 import MobileLogo from "../../public/image.png";
 import { UserNav } from "./user-nav";

@@ -6,6 +6,11 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { MenuIcon } from "lucide-react";
 
+import {
+  RegisterLink,
+  LoginLink,
+} from "@kinde-oss/kinde-auth-nextjs/components";
+
 export function UserNav() {
   return (
     <DropdownMenu>
@@ -20,8 +25,14 @@ export function UserNav() {
         </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-[200px]">
-        <DropdownMenuItem>Register</DropdownMenuItem>
-        <DropdownMenuItem>Login</DropdownMenuItem>
+        <DropdownMenuItem>
+          {" "}
+          <RegisterLink className="w-full">Register</RegisterLink>{" "}
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+          {" "}
+          <LoginLink className="w-full">Login</LoginLink>{" "}
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );
